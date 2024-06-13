@@ -1,0 +1,16 @@
+{
+  "name": "microsoft-ips",
+  "version": "1.0.0",
+  "description": "fetch Microsoft IPs and update imperva waf rule policy with this list as exceptions",
+  "main": "index.js",
+  "authos": "Thanos Keskempes",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/arm-network": "^33.1.0",
+    "@azure/identity": "^4.2.1"
+  }
+}

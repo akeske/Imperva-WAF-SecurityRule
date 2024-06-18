@@ -105,7 +105,8 @@ resource "incapsula_policy" "acl_block_all" {
 
 (async function () {
   const ipData = await fetchAzureIPs();
-  const nameToQuery = "AzureActiveDirectory.ServiceEndpoint"; // Replace with the specific name you want to query
+  // const nameToQuery = "AzureActiveDirectory.ServiceEndpoint"; // Replace with the specific name you want to query
+  const nameToQuery = "AzureCloud"; // Replace with the specific name you want to query
 
   if (ipData) {
     const result = queryByName(ipData, nameToQuery);
